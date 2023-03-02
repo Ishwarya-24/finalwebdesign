@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<link rel="stylesheet" href="recent.css" />
+    
+    <style></style>
+</head>
+<body>
+	<div class="app">
+		<div class="menu-toggle">
+			<div class="hamburger">
+				<span></span>
+			</div>
+		</div>
+
+		<aside class="sidebar">
+			<h3>PROJECTS</h3>
+			
+			<nav class="menu">
+				<a href="projectsouthasia.html" class="menu-item">Gardens by the Bay, Singapore</a>
+				<a href="oasis.html" class="menu-item">Oasis Hotel, Singapore</a>
+				<a href="palmtreeproject.html" class="menu-item">Palm Tree Complex, Singapore</a>
+				<a href="projecthongkong.html" class="menu-item">Hong Kong Stadium, Hong Kong </a>
+                <a href="projectindonesia.html" class="menu-item">Buah Batu, Indonesia </a>
+                <a href="projectpapuaguinea.html" class="menu-item">Port Moresby Stadium, Papua New Guinea</a>
+                <a href="projectvietnam.html" class="menu-item is-active">Song Be Golf, Vietnam </a>
+                <a href="gardenspumping.html" class="menu-item">Gardens by the bay - pumping systems </a>
+                <a href="gardensirrigation.html" class="menu-item">Gardens by the bay - irrigation </a>
+				
+                
+				
+			</nav>
+
+		</aside>
+        
+
+		<main class="topic">
+            <h1>SONG BE GULF</h1>
+            <br><p>Song-Be Golf Course is a 27 hole golf course 
+               <br> 40min north of Ho Chi Minh City, Vietnam. 
+                <br>The irrigation system was manually operated 
+                <br>(since upgraded to Automatic) with its water 
+                <br>supply via two pumping stations</p>
+                <br><h2>Client: Song-Be Golf Company</h2>
+                      
+            <div class="slider">
+                <div class="img-box">
+                    <img src="images/vietnam1.jpg" class="slider-img">
+                </div>
+    
+                <button class="btn" onclick="prev()">Prev</button>
+                <button class="btn" onclick="next()">Next</button>
+            </div>
+			<div id="banner" style="overflow: hidden; display: flex; justify-content:space-around;">
+				<a href="Featuredprojects.html" class="menu-item" style="color: black;"><--HOME PAGE</a>
+				
+				<a href="projectaustralia.html" class="item" style="color: black;" >-->AUSTRALIA</a>
+			</div>
+            
+    
+            <script src="vietnam.js"></script>
+            
+        </main>
+	</div>
+    
+
+	<script>
+		const menu_toggle = document.querySelector('.menu-toggle');
+		const sidebar = document.querySelector('.sidebar');
+
+		menu_toggle.addEventListener('click', () => {
+			menu_toggle.classList.toggle('is-active');
+			sidebar.classList.toggle('is-active');
+		});
+	</script>
+</body>
+</html>

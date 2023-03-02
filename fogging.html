@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Services</title>
+	<link rel="stylesheet" href="services.css" />
+    
+    
+</head>
+<body>
+    <script src="app.js" type="text/javascript"></script>
+	<div class="app">
+		<div class="menu-toggle">
+			<div class="hamburger">
+				<span></span>
+			</div>
+		</div>
+
+		<aside class="sidebar">
+			<h3>Services</h3>
+			
+			<nav class="menu">
+				<a href="services.html" class="menu-item">Design and consultancy</a>
+                <a href="turf.html" class="menu-item">Turf irrigation</a>
+                <a href="pumpingservices.html" class="menu-item ">Pumping systems</a>
+                <a href="Lake.html" class="menu-item ">Lake and pond management</a>
+                <a href="environment.html" class="menu-item ">Environmental Monitoring Systems</a>
+                <a href="fogging.html" class="menu-item is-active">Fogging & Humidity Control</a>
+                <a href="aeration.html" class="menu-item ">Aeration</a>
+                <a href="audits.html" class="menu-item ">Audits & Assessments</a>
+                <a href="agriculture.html" class="menu-item ">Agricultural Irrigation</a>
+                <a href="floating.html" class="menu-item ">Floating Islands</a>
+                <a href="greenwalls.html" class="menu-item ">Green Walls & Green Roofs</a>
+                <a href="waterharvesting.html" class="menu-item ">Water Harvesting & Storage</a>
+				
+                
+				
+			</nav>
+
+		</aside>
+        
+
+		<main class="content">
+            <h1>Fogging & Humidity Control</h1>
+            <br><p>Fogging & Humidity Control Systems
+                <br>Aesthetics & Cooling
+                <br>Humidity Control
+                <br>Lakes & Ponds
+                <br>Effluent Lagoons
+                <br>Industrial water storage</p>
+                <br><br> 
+                
+                <div class="slider">
+                    <div class="img-box">
+                        <img src="images/fogging1.jpg" class="slider-img" style="width: 200; height: 100;">
+                    </div>
+        
+                    <button class="btn" onclick="prev()">Prev</button>
+                    <button class="btn" onclick="next()">Next</button>
+                </div>
+                    
+
+                <br><div id="banner" style="overflow: hidden; display: flex; justify-content:space-around;">
+                            <a href="index.html" class="menu-item" style="color: white;"><--HOME PAGE</a>
+                            <a href="environment.html" class="menu-item" style="color: white;"><--PREVIOUS PAGE</a>
+                            
+                            <a href="aeration.html" class="item" style="color: white;" >-->NEXT POST</a>
+                </div>
+                        
+
+
+
+            </div>
+            <script src="recent.js"></script>
+
+                
+            
+                      
+            
+            
+        </main>
+	</div>
+    <script>
+        const accordition = document.getElementsByClassName('contentBx');
+        for(i=0; i<accordition.length; i++){
+            accordition[i].addEventListener('click', function(){
+                this.classList.toggle('active')
+            })
+            
+            
+        }
+    </script>   
+
+    
+
+	
+</body>
+</html>

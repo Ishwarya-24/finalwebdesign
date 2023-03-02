@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Team Members</title>
+        <link rel="stylesheet" href="style.css">
+        
+        
+        
+
+    </head>
+    <body>
+        <div class="banner">
+            <div class="navbar">
+                <img src="logo1.png" class="logo">
+                <ul>
+                    <li class="active"><a href="index.html">HOME</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn">PROJECTS</button>
+                        <div class="dropdown-content">
+                          <a href="projectaustralia.html">AUSTRALIA</a>
+                          <a href="projectsouthasia.html">SOUTH EAST ASIA</a>
+                          
+                        </div>
+                      </div>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn">ABOUT US</button>
+                        <div class="dropdown-content">
+                          <a href="whoarewe.html">WHO ARE WE</a>
+                          <a href="aboutus.html">TEAM MEMBERS</a>                         
+                          <a href="certification.html">CERTIFICATION</a>
+                          
+                        </div>
+                      </div>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+
+                </ul>
+            </div>
+            
+            <div class="accordition">
+                <div class="contentBx">
+                    <div class="label">Ben Chapman</div>
+                    <div class="fact">
+                        <p>
+                            Director and Co-founder of WET Group
+                            <br>Ben is the senior irrigation designer on the team with C.I.D. Certification 
+                            and a Diploma in Irrigation. Ben also has extensive experience with project 
+                            management, product selection and project sales. 35 years experience in Urban
+                             Irrigation & Water management.
+                            <br>Primary roles: Irrigation and Pumping Consultancy and Design, 
+                            Water Management, Project Sales, Client Liaison, Specification writing. 
+                        </p>
+                    </div>
+                    
+                </div>
+                <div class="contentBx">
+                    <div class="label">Sid Dyer</div>
+                    <div class="fact">
+                        <p>
+                            Hydraulic design & analyses
+                            <br>Sid specialises in Hydraulic design & analyses. Sid holds a diploma in Irrigation. 
+                            Sid has over 45 years experience in Urban Irrigation design.
+                            <br>Primary roles: Pump design and selection & hydraulic calculations on reticulation water supplies.
+                        </p>
+                    </div>
+                    
+                </div>
+                <div class="contentBx">
+                    <div class="label">Darren Rowlatt </div>
+                    <div class="fact">
+                        <p>
+                            AUTOCAD, 3D Conceptual Graphic Art
+                            <br>Darren specialises in AUTOCAD, 3D Conceptual Graphic Art 
+                            and Desktop Publishing. 15 years experience in Urban Irrigation design
+                            <br>Primary roles: Senior CAD Designer.
+                        </p>
+                    </div>
+                    
+                </div>
+                <div class="contentBx">
+                    <div class="label">Terence NG</div>
+                    <div class="fact">
+                        <p>
+                            Director and manager of the Singapore Office
+                            <br>Terence is an irrigation designer and project manager.
+                             Terence has 15 years experiences in the irrigation and pumping industry.
+                            <br>Primary roles: Irrigation and Pump consultancy & design, Project Management, Contract Administration
+
+
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>   
+            <div class="footer">
+                <ul>
+                    <li>
+                        <a href="copyright.html">© 2022 Company, Inc</a>
+                        <br><a href="privacy.html">Privacy policy</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div> 
+        
+        </div>
+        <script>
+            const accordition = document.getElementsByClassName('contentBx');
+            for(i=0; i<accordition.length; i++){
+                accordition[i].addEventListener('click', function(){
+                    this.classList.toggle('active')
+                })
+                
+                
+            }
+        </script>     
+
+    </body>
+</html>

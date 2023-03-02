@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, intial-scale=1.0">
+      <title>WATER EQUIPMENT TECHNOLOGY</title>
+      <link rel="stylesheet" href="style.css">
+
+
+    </head>
+    <body>
+      <Hr>
+      <img class="d-block justify-content-md-start" src="./WET Logo.png" width="80" height="80">
+
+      
+      &emsp; &emsp; &emsp; &emsp; &emsp;<a href="home.html" target_self title="Home">HOME</a>
+      &emsp; &emsp;<a href="project.html" target_self title="Project">PROJECT</a>
+      &emsp; &emsp;<a href="services.html" target_self title="Services">SERVICES</a>
+      &emsp; &emsp;<a href="gallery.html" target_self title="Gallery">GALLERY</a>
+      &emsp; &emsp;<a href="aboutus.html" target_self title="About us">ABOUT US</a>
+      &emsp; &emsp;<a href="contact.html" target_self title="Contact">CONTACT</a>  
+      &emsp; &emsp;<a href="login.html" target_self title="Login">LOGIN</a>  
+      
+
+      <p>
+        Water Equipment Technology is an international company offering design, consulting, audits, project management and CAD services in the harvesting, storing, and efficient application of water supplies. Our clients include developers, landscape architects. government bodies, the mining industry, and the construction industry.
+        <br>Our business strategy is Sustainable Water Management Solutions. A sustainable quality water supply if the life blood of any agricultural property, horticultural garden or sporting arena. In an age where water in a precious commodity, such irrigators must have their own water supply complete with a usage management plan to guarantee themselves an uninterrupted sustainable water source.
+
+        </p>
+        <h2>
+          <a href = "LearnMore.html">
+            <button type="button" >Learn More</button>
+          </a>
+        </h2>
+        
+
+
+    </body>
+</html>
+
+
+
+
+
+
+css
+p{
+    font-size: 3ch;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: darkblue;
+    padding: 25px 50px 75px 100px;
+}
+h2{
+    padding: 25px 50px 75px 100px;  
+    size: 10ch; 
+}

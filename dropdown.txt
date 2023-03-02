@@ -1,0 +1,16 @@
+<div class="container">
+        <button class="click">Projects</button>
+        <div class="list">
+          <button class="links">Australia</button>
+          <button class="links">South East Asia</button>
+          
+          
+        </div>
+      </div>
+      <script>
+        let click = document.querySelector('.click');
+        let list = document.querySelector('.list');
+        click.addEventListener("click",()=>{
+          list.classList.toggle('newlist');
+        })
+      </script>

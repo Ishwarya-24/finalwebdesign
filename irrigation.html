@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Responsive Navbar</title>
+	<link rel="stylesheet" href="recent.css" />
+</head>
+<body>
+	<div class="app">
+		<div class="menu-toggle">
+			<div class="hamburger">
+				<span></span>
+			</div>
+		</div>
+
+		<aside class="sidebar">
+			<h3>Menu</h3>
+			
+			<nav class="menu">
+				<a href="recentpost.html" class="menu-item ">Palm tree complex</a>
+				<a href="samford.html" class="menu-item">Samford sports facility</a>
+				<a href="pumpingsystem.html" class="menu-item">Gardens by the bay pumping systems</a>
+				<a href="irrigation.html" class="menu-item is-active">Gardens by the bay irrigation</a>
+                <a href="brisbane.html" class="menu-item">Brisbane botanic gardens</a>
+			</nav>
+
+		</aside>
+
+		<main class="topic">
+			<h1>Gardens By The Bay - Irrigation</h1>
+			<br><p>Gardens by the Bay are a high quality botanical
+				<br>gardens located at the mouth of the Singapore River.
+				<br>The Gardens consist of a 1.2 Ha cool dry and 
+				<br>a .8 Ha cool moist conservatory, 23 supertrees and
+				<br>superb gardens. The irrigation system comprises of 5 pump 
+				<br>stations, 5 central computer control systems, 340 solenoid
+				<br>valves and 2,800 sprinklers.</p>
+				<br><h2>Client: National Parks – Singapore.
+					<br>Irrigation Contractor: Aqua Works.
+					<br>Size: 54 Ha.</h2>	
+					<div class="slider">
+						<div class="img-box">
+							<img src="images/irrigation1.jpg" class="slider-img">
+						</div>
+			
+						<button class="btn" onclick="prev()">Prev</button>
+						<button class="btn" onclick="next()">Next</button>
+					</div>
+					<div id="banner" style="overflow: hidden; display: flex; justify-content:space-around;">
+						<a href="index.html" class="menu-item" style="color: black;"><--HOME PAGE</a>
+						<a href="pumpingsystem.html" class="menu-item" style="color: black;"><--PREVIOUS POST</a>
+						<a href="brisbane.html" class="item" style="color: black;" >-->NEXT POST</a>
+					</div>
+			
+					<script src="irrigation.js"></script>
+							
+
+		</main>
+	</div>
+
+	<script>
+		const menu_toggle = document.querySelector('.menu-toggle');
+		const sidebar = document.querySelector('.sidebar');
+
+		menu_toggle.addEventListener('click', () => {
+			menu_toggle.classList.toggle('is-active');
+			sidebar.classList.toggle('is-active');
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <title>My store</title>
+        <style>
+          ul {
+            
+            
+            font-size: large;
+            color: black ;
+        
+          }
+
+          li{ 
+            color: black;
+          }
+          h2{
+            font-size: 40px;
+            color:hotpink;
+            font-weight: bolder;
+          }
+        </style>
+
+        
+    </head>
+    <body>
+          
+
+        <!-- Header -->
+        
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <img class="d-block justify-content-md-start" src="./WET Logo.png" width="90" height="90">
+            
+           
+          </a>
+    
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Gallery</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About us</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+            <button type="button" class="btn btn-primary px-4 me-sm-3 mb-5 d-flex justify-content-center">Log in</button>
+          </ul>
+        </header>
+
+        <!-- Hero -->
+        <!-- Your code here... -->
+        <div class="px-4 pt-5 my-5 text-center border-bottom">
+          <h1 class="display-5 fw-bold">Water equipment technology</h1>
+          <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">Water Equipment Technology is an international company offering design, consulting, audits, project management and CAD services in the harvesting, storing, and efficient application of water supplies. Our clients include developers, landscape architects. government bodies, the mining industry, and the construction industry.
+
+                Our business strategy is Sustainable Water Management Solutions. A sustainable quality water supply if the life blood of any agricultural property, horticultural garden or sporting arena. In an age where water in a precious commodity, such irrigators must have their own water supply complete with a usage management plan to guarantee themselves an uninterrupted sustainable water source.</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+              <button type="button" class="btn btn- btn-dark px-4 me-sm-3 d-flex justify-content-center">Learn More</button>
+              
+            </div>
+          </div>
+          
+
+
+        
+        
+    
+              
+            </div>
+            
+
+        
+        <!-- Footer -->
+        <!-- Your code here... -->
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+              <img class="d-block mx-auto mb-7" src="./WET Logo.png" alt="" width="100" height="100">
+            </a>
+            <span class="mb-3 mb-md-0 text-muted">© 2022 Company, Inc</span>
+          </div>
+      
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+          </ul>
+        </footer>

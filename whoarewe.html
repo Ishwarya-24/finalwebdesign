@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Who are we</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <div class="banner">
+            
+            
+            <div class="navbar">
+                <img src="logo1.png" class="logo">
+                <ul>
+                    <li class="active"><a href="index.html">HOME</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn">PROJECTS</button>
+                        <div class="dropdown-content">
+                          <a href="projectaustralia.html">AUSTRALIA</a>
+                          <a href="projectsouthasia.html">SOUTH EAST ASIA</a>
+                          
+                        </div>
+                      </div>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn">ABOUT US</button>
+                        <div class="dropdown-content">
+                          <a href="whoarewe.html">WHO ARE WE</a>
+                          <a href="aboutus.html">TEAM MEMBERS</a>                         
+                          <a href="certification.html">CERTIFICATION</a>
+                          
+                        </div>
+                      </div>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+
+                </ul>
+            </div>
+            <div class="accordition">
+                <div class="contentBx">
+                    <div class="label">What we do</div>
+                    <div class="fact">
+                        <p>
+                            Water Equipment Technology (WET), a Queensland, Australia & Singapore based company, has earned an industry reputation in maintaining high standards in design, construction oversight & delivery for pumping and irrigation systems.
+                            We offer a complete water management solution from concept stage, scheme and detailed design & planning all the way through to construction & project management.
+                            Our objective is to work within the environment with zero tolerance towards harming it. In fact, being water focused, our activities enhance and protect the environment while supporting business goals.
+                            Our abilities have been recognised by a steady stream of clients in Local & State Government, commerce, mining industry, education, sport & recreation.
+                        </p>
+                    </div>
+                    
+                </div>
+
+            </div>
+            <div class="accordition">
+                <div class="contentBx">
+                    <div class="label">Who we are</div>
+                    <div class="fact">
+                        <p>
+                            The staff at WET have eighty years consultancy experience between them, over thirty 
+                            five years in the industry which gives us the ability to provide new and innovative
+                             solutions to the most complex irrigation, pumping and water management projects and
+                             the best level of service in the market place.
+                        </p>
+                    </div>
+                    
+                </div>
+
+            </div>
+            <div class="container">
+                <iframe width="450" height="200" src="https://www.youtube.com/embed/uE2_MoqF-uI" title="Irrigation Australia Certified Irrigation Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            
+            
+            <div class="footer">
+                <ul>
+                    <li>
+                        <a href="copyright.html">© 2022 Company, Inc</a>
+                        <br><a href="privacy.html">Privacy policy</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div> 
+        <script>
+            const accordition = document.getElementsByClassName('contentBx');
+            for(i=0; i<accordition.length; i++){
+                accordition[i].addEventListener('click', function(){
+                    this.classList.toggle('active')
+                })
+                
+                
+            }
+        </script>   
+
+    </body>
+</html>

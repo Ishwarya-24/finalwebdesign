@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Responsive Navbar</title>
+	<link rel="stylesheet" href="recent.css" />
+    
+    <style>
+	a.menu-item{
+	color: #111;
+	padding:5px 50px;
+	text-align: left;
+	display: inline-flex;
+	margin-bottom: 20px;
+	text-decoration: none;
+	
+    }
+    a.item{
+	color: #111;
+	padding:5px 200px;
+	text-align: right;
+	display: inline-flex;
+	margin-bottom: 20px;
+	text-decoration: none;
+	
+   }
+	
+	</style>
+</head>
+<body>
+	<div class="app">
+		<div class="menu-toggle">
+			<div class="hamburger">
+				<span></span>
+			</div>
+		</div>
+
+		<aside class="sidebar">
+			<h3>PROJECTS</h3>
+			
+			<nav class="menu">
+				<a href="projectaustralia.html" class="menu-item">Mt coo tha botanical gardens</a>
+				<a href="golfaus.html" class="menu-item">Ipswich Golf & Country Club</a>
+				<a href="eaglefarm.html" class="menu-item">Eagle Farm Race Track</a>
+				<a href="anzstadium.html" class="menu-item is-active">ANZ Stadium </a>
+                <a href="stockland.html" class="menu-item">Stocklands – North Lakes </a>
+                <a href="samfordaustralia.html" class="menu-item">Samford sports facility</a>
+				
+			</nav>
+
+		</aside>
+        
+
+		<main class="topic">
+            <h1>Mt Coo-tha Botanic Gardens - Brisbane</h1>
+            <br><p> ANZ Stadium, formally known as Stadium Australia, 
+                <br>was built for the Olympic and Paralympics Games held in
+                 <br>2000 in Sydney, NSW. The stadium was reconfigured in 2003
+                  <br>after the games to host five professional sporting codes. 
+                  <br>The stadium has a unique and environmentally friendly design 
+                  <br>and is the second largest rugby union stadium. 
+
+                  <br>Water Equipment Technology upgraded the irrigation 
+                  <br>and pump systems to an individual head control system. 
+                  <br>The new system uses the central computerised control Rain 
+                  <br>Bird SiteControl system to control Rain Bird 8005 sprinklers
+                  <br> each with a 25mm solenoid valve. The pumping system was 
+                  <br>upgraded by installing a pressure controlled CALPEDA pump with VFD drives. </p>   
+                    <br><br> <h3>Click the link below to see a detailed video</h3>
+
+                    <br><h2><a href="https://youtu.be/UG1j51lrdBc">ANZ stadium - Australia's home ground</a>        
+            <div class="slider">
+                <div class="img-box">
+                    <img src="images/anz1.png" class="slider-img">
+                </div>
+    
+                <button class="btn" onclick="prev()">Prev</button>
+                <button class="btn" onclick="next()">Next</button>
+            </div>
+			<div id="banner" style="overflow: hidden; display: flex; justify-content:space-around;">
+				<a href="Featuredprojects.html" class="menu-item" style="color: black;"><--HOME PAGE</a>
+				
+				<a href="projectsouthasia.html" class="item" style="color: black;" >-->SOUTH EAST ASIA</a>
+			</div>
+    
+            <script src="anz.js"></script>
+            
+        </main>
+	</div>
+    
+
+	<script>
+		const menu_toggle = document.querySelector('.menu-toggle');
+		const sidebar = document.querySelector('.sidebar');
+
+		menu_toggle.addEventListener('click', () => {
+			menu_toggle.classList.toggle('is-active');
+			sidebar.classList.toggle('is-active');
+		});
+	</script>
+</body>
+</html> 

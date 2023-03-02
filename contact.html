@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CONTACT US</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <div class="banner">
+            
+            <div class="navbar">
+                <img src="logo1.png" class="logo">
+                <ul>
+                    <li class="active"><a href="index.html">HOME</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn">PROJECTS</button>
+                        <div class="dropdown-content">
+                          <a href="projectaustralia.html">AUSTRALIA</a>
+                          <a href="projectsouthasia.html">SOUTH EAST ASIA</a>
+                          
+                        </div>
+                      </div>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn">ABOUT US</button>
+                        <div class="dropdown-content">
+                          <a href="whoarewe.html">WHO ARE WE</a>
+                          <a href="aboutus.html">TEAM MEMBERS</a>                         
+                          <a href="certification.html">CERTIFICATION</a>
+                          
+                        </div>
+                      </div>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+
+                </ul>
+                
+            </div>
+            <div class="accordition">
+                <div class="contentBx">
+                    <div class="label">Contact Details Australia</div>
+                    <div class="fact">
+                        <p>
+                            Address: 1967 Anzac Avenue, Mango Hill, Qld. Australia 4509.
+
+                            <br>Phone: +(61) 07 3204 2003
+
+                            <br>Fax: +(61) 07 3293 1143
+
+                            <br>Email: sales@waterequipment.com.au
+
+                            <br>Website: www.waterequipment.com.au
+                        </p>
+                    </div>
+                    
+                </div>
+                <div class="contentBx">
+                    <div class="label">Contact Details Singapore</div>
+                    <div class="fact">
+                        <p>
+                            Address: 63 Hillview Avenue #09-13 Lam Soon Industrial Building Singapore 669569
+                            <br> Tel: +(65) 9748 5528
+                        </p>
+                    </div>
+                    
+                </div>
+                <div class="contentBx">
+                    <div class="label"> Company Contacts </div>
+                    <div class="fact">
+                        <p>
+                            Ben Chapman – Director/Senior – Consultant
+
+                            <br>Email: ben@waterequipment.com.au
+
+                            <br>Niel Surman – Senior Consultant
+
+                            <br>Email: neil@waterequipment.com.au
+
+                            <br>Michael Barker – Senior Consultant
+
+                            <br>Email: michael@waterequipment.com.au
+
+                            <br>Renee Chapman – BSc (hons) Ecoligist
+
+                            <br>Email: renee@waterequipment.com.au
+                        </p>
+                    </div>
+                    
+                    
+                </div>
+                <div class="contentBx">
+                    <div class="label">More details</div>
+                    <div class="fact">
+                        <iframe src="WET-Company-Brochure.pdf" width="100%" height="800px">
+                        </iframe>
+                    </div>
+                    
+                </div>
+                <div class="contentBx">
+                    <div class="label">MAP</div>
+                    <div class="fact">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3547.7271757738717!2d153.0345903144333!3d-27.227714212971843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b93e53f8cc79995%3A0x8d2290cfce04f9ae!2sWater%20Equipment%20Technology!5e0!3m2!1sen!2sae!4v1677360531227!5m2!1sen!2sae" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="footer">
+                <ul>
+                    <li>
+                        <a href="copyright.html">© 2022 Company, Inc</a>
+                        <br><a href="privacy.html">Privacy policy</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+        <script>
+            const accordition = document.getElementsByClassName('contentBx');
+            for(i=0; i<accordition.length; i++){
+                accordition[i].addEventListener('click', function(){
+                    this.classList.toggle('active')
+                })
+                
+                
+            }
+        </script>  
+
+    </body>
+</html>

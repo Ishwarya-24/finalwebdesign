@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Responsive Navbar</title>
+	<link rel="stylesheet" href="recent.css" />
+	<style>
+		a.menu-item{
+		color: #111;
+		padding:5px 50px;
+		text-align: left;
+		display: inline-flex;
+		margin-bottom: 20px;
+		text-decoration: none;
+		
+		}
+		a.item{
+		color: #111;
+		padding:5px 200px;
+		text-align: right;
+		display: inline-flex;
+		margin-bottom: 20px;
+		text-decoration: none;
+		
+	   }
+		
+	</style>
+</head>
+<body>
+	<div class="app">
+		<div class="menu-toggle">
+			<div class="hamburger">
+				<span></span>
+			</div>
+		</div>
+
+		<aside class="sidebar">
+			<h3>PROJECTS</h3>
+			
+			<nav class="menu">
+				<a href="projectaustralia.html" class="menu-item">Mt coo tha botanical gardens</a>
+				<a href="golfaus.html" class="menu-item">Ipswich Golf & Country Club</a>
+				<a href="eaglefarm.html" class="menu-item">Eagle Farm Race Track</a>
+				<a href="anzstadium.html" class="menu-item">ANZ Stadium </a>
+                <a href="stockland.html" class="menu-item">Stocklands – North Lakes </a>
+                <a href="samfordaustralia.html" class="menu-item is-active">Samford Sports Facility </a>
+			</nav>
+
+		</aside>
+
+		<main class="topic">
+			<h1>Samford Sports Facility - Queensland</h1>
+			<br><p>A sustainable irrigation system was installed on a 
+			 <br>newly built sand profile sports field. The irrigation
+			 <br>system included stormwater harvesting plus water transfer from a dam.</p>
+			 <br><h2>Client: Morton Bay Regional Council.
+				<br>Main Con: Naric Civil.
+				<br>Size: 3 Ha.</h2>
+
+				<div class="slider">
+					<div class="img-box">
+						<img src="images/samford1.png" class="slider-img">
+					</div>
+		
+					<button class="btn" onclick="prev()">Prev</button>
+					<button class="btn" onclick="next()">Next</button>
+				</div>
+				<div id="banner" style="overflow: hidden; display: flex; justify-content:space-around;">
+					<a href="Featuredprojects.html" class="menu-item" style="color: black; font-weight: bold;"><--HOME PAGE</a>
+					
+					<a href="projectsouthasia.html" class="item" style="color: black; font-weight: bold;" >-->SOUTH EAST ASIA</a>
+				</div>
+				
+		
+				<script src="samford.js"></script>	
+		</main>
+	</div>
+
+	<script>
+		const menu_toggle = document.querySelector('.menu-toggle');
+		const sidebar = document.querySelector('.sidebar');
+
+		menu_toggle.addEventListener('click', () => {
+			menu_toggle.classList.toggle('is-active');
+			sidebar.classList.toggle('is-active');
+		});
+	</script>
+</body>
+</html>

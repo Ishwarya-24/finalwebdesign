@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Responsive Navbar</title>
+	<link rel="stylesheet" href="recent.css" />
+    
+    <style></style>
+</head>
+<body>
+	<div class="app">
+		<div class="menu-toggle">
+			<div class="hamburger">
+				<span></span>
+			</div>
+		</div>
+
+		<aside class="sidebar">
+			<h3>PROJECTS</h3>
+			
+			<nav class="menu">
+				<a href="projectsingapore.html" class="menu-item is-active">Gardens by the bay</a>
+                <a href="oasis.html" class="menu-item">Oasis hotel</a>
+				
+                
+				
+			</nav>
+
+		</aside>
+        
+
+		<main class="content">
+            <h1>Gardens by the bay</h1>
+            
+            <br><p>From major 3D pump station design, to open plan
+                 <br>presentation turf zones with intricate botanical 
+                 <br> gardens, to micro sub-surface drip irrigation 
+                 <br>delivering precise quantities of nutrient enriched
+                 <br> water for all plant species from around the world
+                 <br> in on ground and vertical planted structures. 
+                   
+                 <br>Virtually every aspect of irrigation products and current
+                 <br>design trends have been utilised in this project.
+                 <br><br>This extensive project called for the latest
+                 <br>design techniques and product selection to make this
+                 <br>project come together. Our Singapore and Australian 
+                 <br>teams are proud to be playing a role in
+                 <br>this visionary project.
+                </p>
+                <br><br> <h3>Click the link below to see a detailed video</h3>
+
+                <br><h2><a href="https://youtu.be/bMSBeeNf6oE">Gardens by the bay</a>
+                      
+            <div class="slider">
+                <div class="img-box">
+                    <img src="images/singapore1.jpg" class="slider-img">
+                </div>
+    
+                <button class="btn" onclick="prev()">Prev</button>
+                <button class="btn" onclick="next()">Next</button>
+            </div>
+            
+    
+            <script src="singaporegardens.js"></script>
+            
+        </main>
+	</div>
+    
+
+	<script>
+		const menu_toggle = document.querySelector('.menu-toggle');
+		const sidebar = document.querySelector('.sidebar');
+
+		menu_toggle.addEventListener('click', () => {
+			menu_toggle.classList.toggle('is-active');
+			sidebar.classList.toggle('is-active');
+		});
+	</script>
+</body>
+</html>

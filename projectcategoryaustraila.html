@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Responsive Navbar</title>
+	<link rel="stylesheet" href="recent.css" />
+    
+    <style></style>
+</head>
+<body>
+	<div class="app">
+		<div class="menu-toggle">
+			<div class="hamburger">
+				<span></span>
+			</div>
+		</div>
+
+		<aside class="sidebar">
+			<h3>PROJECTS</h3>
+			
+			<nav class="menu">
+				<a href="projectcategoryaustraila.html" class="menu-item is-active">Mt coo tha botanical gardens</a>
+				<a href="golfaus.html" class="menu-item">Ipswich Golf & Country Club</a>
+				<a href="eaglefarm.html" class="menu-item">Eagle Farm Race Track</a>
+				<a href="anzstadium.html" class="menu-item">ANZ Stadium </a>
+                <a href="stockland.html" class="menu-item">Stocklands – North Lakes </a>
+				<a href="samford.html" class="menu-item">Samford sports facility </a>
+                
+				
+			</nav>
+
+		</aside>
+        
+
+		<main class="content">
+            <h1>Mt Coo-tha Botanic Gardens - Brisbane</h1>
+            <br><p> A sustainable water strategy with carried
+                 <br>out on this site. This report was to ascertain
+                 <br> the water harvesting capability based on catchment
+                 <br> area and rainfall, the size of storage required 
+                 <br>for a sustainable water supply. The calculated 
+                 <br> storage is 65mL within 3 catchments. A 250mm 
+                 <br>transfer system complete with pumps is required 
+                 <br> to move water between storage locations.
+                <br><br>Client: Moreton Bay Regional Council.
+                    <br>Main Con: Scape Shapes.
+                    <br>Size: 3 Ha.</p>   
+                    <br><br> <h3>Click the link below to see a detailed video</h3>
+
+                    <br><h2><a href="https://youtu.be/SzZFGgu9SsU">Mt Coo-tha Botanic Gardens - Brisbane</a>        
+            <div class="slider">
+                <div class="img-box">
+                    <img src="images/botanic1.jpg" class="slider-img">
+                </div>
+    
+                <button class="btn" onclick="prev()">Prev</button>
+                <button class="btn" onclick="next()">Next</button>
+            </div>
+            
+    
+            <script src="australiaproject.js"></script>
+            
+        </main>
+	</div>
+    
+
+	<script>
+		const menu_toggle = document.querySelector('.menu-toggle');
+		const sidebar = document.querySelector('.sidebar');
+
+		menu_toggle.addEventListener('click', () => {
+			menu_toggle.classList.toggle('is-active');
+			sidebar.classList.toggle('is-active');
+		});
+	</script>
+</body>
+</html> 
